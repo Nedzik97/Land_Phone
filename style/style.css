@@ -1,0 +1,578 @@
+html,
+body {
+margin: 0;
+padding: 0;
+font-size: 10px;
+}
+
+/* .........................fonts........................................... */
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto/roboto-v30-latin-regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto/roboto-v30-latin-500.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto/roboto-v30-latin-700.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto/roboto-v30-latin-900.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("../fonts/jost/jost-v14-latin-regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("../fonts/jost/jost-v14-latin-italic.woff2") format("woff2");
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("../fonts/jost/jost-v14-latin-500.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Jost";
+	src: url("../fonts/jost/jost-v14-latin-700.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+.page-container {
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+min-width: 320px;
+min-height: 460px;
+}
+
+.page-main {
+background-image: url("../images/bg.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: top;
+background-color: #242530;
+padding: 0 1.6rem;
+}
+
+.gender_text {
+font-family: "Jost", sans-serif;
+padding-top: 28rem;
+text-align: center;
+margin: 0;
+font-weight: 700;
+font-size: 1.8rem;
+line-height: 2.6rem;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-bottom: 1.2rem;
+}
+
+.button_man {
+font-family: "Jost", sans-serif;
+font-weight: 600;
+border: none;
+width: 100%;
+padding: 1.1rem 0 0.9rem 0;
+text-align: center;
+background: linear-gradient(180deg, #FFB45C 0%, #FFA438 100%);
+box-shadow: 0px 0px 10px rgba(255, 162, 53, 0.25);
+border-radius: 10px;
+cursor: pointer;
+margin-bottom: 1.2rem;
+min-height: 4.4rem;
+font-size: 1.6rem;
+line-height: 2.3rem;
+text-align: center;
+letter-spacing: 0.02em;
+color: #242530;
+position: relative;
+}
+
+.button_man::after {
+	content: "";
+	position: absolute;
+	top: 22%;
+	left: 29%;
+	width: 12px;
+	height: 22px;
+	background-image: url("../images/icons/man_icon.svg");
+	background-repeat: no-repeat;
+}
+
+.button_woman {
+font-family: "Jost", sans-serif;
+font-weight: 600;
+border: none;
+width: 100%;
+padding: 1.1rem 0 0.9rem 0;
+text-align: center;
+background: linear-gradient(180deg, #FFB45C 0%, #FFA438 100%);
+box-shadow: 0px 0px 10px rgba(255, 162, 53, 0.25);
+border-radius: 10px;
+cursor: pointer;
+min-height: 4.4rem;
+font-size: 1.6rem;
+line-height: 2.3rem;
+text-align: center;
+letter-spacing: 0.02em;
+color: #242530;
+margin-bottom: 2rem;
+position: relative;
+}
+
+.button_woman::after {
+content: "";
+position: absolute;
+top: 22%;
+left: 29%;
+width: 12px;
+height: 22px;
+background-image: url("../images/icons/woman_icon.svg");
+background-repeat: no-repeat;
+}
+
+.block_comments {
+	margin-bottom: 4.2rem;
+}
+
+.comment {
+padding: 2rem 2.1rem;
+background: #2F303E;
+box-shadow: 3px 3px 12px #242530;
+border-radius: 10px;
+position: relative;
+}
+
+
+.comment::before {
+	content: "";
+	position: absolute;
+	background-image: url("../images/icons/bg_icon_quotes_1.svg");
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 45px;
+	top: 11px;
+	right: 28px;
+
+}
+
+.comment::after {
+	content: "";
+	position: absolute;
+	background-image: url("../images/icons/bg_icon_quotes_2.svg");
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 45px;
+	top: 11px;
+	right: -8px;
+}
+
+.photo_commenters_lylia {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.photo_commenters_ehor {
+	position: absolute;
+	top: 20px;
+	left: 49px;
+}
+
+.commenters_name {
+font-family: "Roboto", sans-serif;
+padding-left: 71px;
+margin: 0;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 1.4rem;
+color: #FFFFFF;
+margin-bottom: 3px;
+}
+
+.data_comment {
+font-family: "Roboto", sans-serif;
+padding-left: 71px;
+margin: 0;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 1.4rem;
+color: #656D78;
+}
+
+.comment_text {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: italic;
+font-size: 1.4rem;
+line-height: 1.9rem;
+color: #AAB2BD;
+}
+
+.link_read_more {
+font-family: "Roboto", sans-serif;
+font-style: normal;
+color: #FFA438;
+cursor: pointer;
+text-decoration: underline;
+}
+
+.main-footer {
+background: #3B3C4B;
+box-shadow: inset 0 2px 20px rgba(0, 0, 0, 0.45);
+}
+
+.navigation_menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2.4rem 0 1.9rem 0;
+}
+
+.navigation_link {
+font-family: "Roboto", sans-serif;
+text-decoration: none;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.9rem;
+text-align: center;
+color: #FFFFFF;
+}
+
+.navigation_link:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+/* ............................purpose of dating................................ */
+
+.main_purpose_of_dating {
+background: url("../images/bg_purpose_dating.jpg"), linear-gradient(180deg, rgba(36, 37, 48, 0) 30.21%, #242530 95.83%);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: top;
+background-color: #242530;
+padding: 0 2.4rem;
+}
+
+.title_purpose_of_dating {
+font-family: "Roboto", sans-serif;
+margin: 0;
+padding-top: 16.5rem;
+text-align: center;
+font-weight: 700;
+font-size: 1.6rem;
+line-height: 2.6rem;
+text-align: center;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+margin-bottom: 1.6rem;
+}
+
+.button_purpose_of_dating {
+border: none;
+font-family: "Roboto", sans-serif;
+width: 100%;
+padding: 1.3rem 0 1.4rem 0;
+box-sizing: border-box;
+min-height: 44px;
+background: linear-gradient(180deg, #FFB45C 0%, #FFA438 100%);
+border-radius: 10px;
+font-weight: 600;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: #242530;
+cursor: pointer;
+}
+
+.button_purpose_of_dating:not(:last-child) {
+	margin-bottom: 1.4rem;
+}
+
+.promt_text {
+font-family: "Roboto", sans-serif;
+margin-top: 4.5rem;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.6rem;
+text-align: center;
+color: #AAB2BD;
+opacity: 0.6;
+}
+
+/* .............................create_quastionnaire............................ */
+
+.container_create_quastionnaire {
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+min-width: 320px;
+min-height: 460px;
+}
+
+.main_create_quastionnaire {
+background-image: url("../images/bg_create_quastionnaire.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: top;
+background-color: #242530;
+padding: 0 2.4rem;
+}
+
+.title_create_quastionnaire {
+text-align: center;
+margin: 0;
+margin-top: 13.5rem;
+font-family: 'Jost', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.8rem;
+line-height: 2.6rem;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.text_create_quastionnaire {
+margin: 0;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.6rem;
+text-align: center;
+color: #AAB2BD;
+opacity: 0.6;
+margin-top: 0.4rem;
+margin-bottom: 1.2rem;
+}
+
+.label_name_quastionnaire {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: #FFFFFF;
+}
+
+.input_name_quastionnaire {
+width: 100%;
+padding: 1.4rem 0 1.4rem 1.6rem;
+display: block;
+background: #C7C8D0;
+box-shadow: inset 1px 1px 6px rgba(36, 37, 48, 0.5);
+border-radius: 10px;
+border: none;
+margin-top: 0.6rem;
+margin-bottom: 1.8rem;
+box-sizing: border-box;
+}
+
+.select_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.select {
+width: 8.2rem;
+box-sizing: border-box;
+padding: 1.4rem 0 1.4rem 1.6rem;
+background: #C7C8D0;
+box-shadow: inset 1px 1px 6px rgba(36, 37, 48, 0.5);
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 1.6rem;
+margin-top: 0.6rem;
+margin-bottom: 1.8rem;
+}
+
+.label_password_quastionnaire {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: #FFFFFF;
+}
+
+.input_password_quastionnaire {
+box-sizing: border-box;
+width: 100%;
+padding: 1.4rem 0 1.4rem 1.6rem;
+background: #C7C8D0;
+box-shadow: inset 1px 1px 6px rgba(36, 37, 48, 0.5);
+border-radius: 10px;
+margin-top: 0.6rem;
+margin-bottom: 1.8rem;
+border: none;
+}
+
+.label_mail_quastionnaire {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 1.4rem;
+line-height: 1.6rem;
+color: #FFFFFF;
+
+}
+
+.input_mail_quastionnaire {
+box-sizing: border-box;
+width: 100%;
+padding: 1.4rem 0 1.4rem 1.6rem;
+background: #C7C8D0;
+box-shadow: inset 1px 1px 6px rgba(36, 37, 48, 0.5);
+border-radius: 10px;
+margin-top: 0.6rem;
+border: none;
+}
+
+.button_create_quastionnaire {
+margin-top: 2.4rem;
+box-sizing: border-box;
+width: 100%;
+padding: 1.3rem 0 1.4rem 0;
+text-align: center;
+background: linear-gradient(180deg, #FFB45C 0%, #FFA438 100%);
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 1.4rem;
+line-height: 1.6rem;
+text-align: center;
+letter-spacing: 0.02em;
+color: #242530;
+cursor: pointer;
+margin-bottom: 1.2rem;
+border: none;
+}
+
+.label_checkbox {
+padding-left: 2.2rem;
+cursor: pointer;
+display: block;
+position: relative;
+margin-bottom: 4.2rem;
+font-family: "Roboto", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 0.9rem;
+line-height: 1.2rem;
+display: flex;
+align-items: center;
+color: #656D78;
+}
+
+.checkbox_mark {
+	background-image: url("../images/icons/bg_checkbox.svg");
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 15px;
+	left: 4px;
+}
+
+.input_checkbox {
+	appearance: none;
+}
+
+.input_checkbox[type="checkbox"]:checked ~ .checkbox_mark  {
+	background: url("../images/icons/check_mark-icon.svg") 0 0 repeat;
+	background-position: center;
+	width: 13px;
+	height: 13px;
+}
+
+/* .....................media..................................... */
+
+@media (min-width: 375px) {
+	html,
+	body {
+		font-size: 12px;
+	}
+
+	.button_man::after {
+		top: 25%;
+		left: 25%;
+	}
+
+	.button_woman::after {
+		top: 25%;
+		left: 25%;
+	}
+}
+
+@media (min-width: 425px) {
+	html,
+	body {
+		font-size: 14px;
+	}
+
+	.button_man::after {
+		top: 30%;
+		left: 27%;
+	}
+
+	.button_woman::after {
+		top: 30%;
+		left: 27%;
+	}
+}
+
+
+@media (min-width: 480px) {
+	html,
+	body {
+		font-size: 16px;
+	}
+
+	.button_man::after {
+		top: 35%;
+		left: 29%;
+	}
+
+	.button_woman::after {
+		top: 35%;
+		left: 29%;
+	}
+}
