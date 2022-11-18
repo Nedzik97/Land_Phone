@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>create quastionnaire</title>
 </head>
-
 <body>
 	<div class="container_create_quastionnaire">
 		<main class="main_create_quastionnaire">
@@ -19,7 +17,7 @@
 				</label>
 				<label class="label_name_quastionnaire">Дата рождения:
 					<div class="select_wrapper">
-						<select class="select" aria-label="Дата рождения">
+						<select class="select_quastionnaire" aria-label="Дата рождения">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -53,7 +51,7 @@
 							<option value="31">31</option>
 						</select>
 
-						<select class="select" aria-label="Месяц рождения">
+						<select class="select_quastionnaire" aria-label="Месяц рождения">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -68,7 +66,7 @@
 							<option value="12">12</option>
 						</select>
 
-						<select class="select" aria-label="Год рождения">
+						<select class="select_quastionnaire" aria-label="Год рождения">
 							<option value="2000">2000</option>
 							<option value="2001">2001</option>
 							<option value="2002">2002</option>
@@ -86,19 +84,21 @@
 					</div>
 				</label>
 				<label class="label_password_quastionnaire">Придумайте пароль:
-					<input class="input_password_quastionnaire" type="password" name="password" placeholder="Минимум 8 символов" required>
+					<input class="input_password_quastionnaire" type="password" name="password" placeholder="Минимум 8 символов"
+						required>
 				</label>
 				<label class="label_mail_quastionnaire">Email:
 					<input class="input_mail_quastionnaire" type="mail" name="mail" placeholder="Введите свою почту" required>
 				</label>
 				<button class="button_create_quastionnaire" type="button">Создать</button>
-			<label class="label_checkbox" >Регистрируясь, я подтверждаю что мне исполнилось 18 лет. Я принимаю условия лицензионного соглашения, политики конфиденциальности, обработки персональных данных.
-				<input class="input_checkbox" type="checkbox" name="proof of age" checked>
-				<span class="checkbox_mark"></span>
-			</label>
+				<label class="label_checkbox">Регистрируясь, я подтверждаю что мне исполнилось 18 лет. Я принимаю условия
+					лицензионного соглашения, политики конфиденциальности, обработки персональных данных.
+					<input class="input_checkbox" type="checkbox" name="proof of age" checked>
+					<span class="checkbox_mark"></span>
+				</label>
 			</form>
 		</main>
-		<footer class="main-footer">
+		<footer class="main_footer">
 			<nav class="navigation_menu">
 				<a class="navigation_link" href="#">О проекте</a>
 				<a class="navigation_link" href="#">Подержка</a>
@@ -107,5 +107,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>
